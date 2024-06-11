@@ -2,13 +2,99 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
-
+  <title>Hotelbuchung</title>
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
 
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+
+  <fieldset>
+    <legend>Fahrzeug-Konfigurator</legend>
+    <label>Fahrzeugmodell:
+      <select name="Fahrzeugmodell" size="5">
+        <option>Model A</option>
+        <option>Model B</option>
+        <option>Model C</option>
+        <option>Model D</option>
+        <option>Model E</option>
+        <option>Model F</option>
+        <option>Model G</option>
+        <option>Model H</option>
+        <option>Model I</option>
+        <option>Model J</option>
+        <option>Model K</option>
+        <option>Model L</option>
+        <option>Model M</option>
+        <option>Model N</option>
+        <option>Model O</option>
+        <option>Model P</option>
+        <option>Model Q</option>
+        <option>Model R</option>
+        <option>Model S</option>
+        <option>Model T</option>
+        <option>Model U</option>
+        <option>Model V</option>
+        <option>Model W</option>
+        <option>Model X</option>
+        <option>Model Y</option>
+        <option>Model Z</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Wählen Sie eine Lackfarbe:</label><br>
+    <label>
+      <input type="radio" name="Lackfarbe" value="Rot">
+      Rot
+    </label><br>
+    <label>
+      <input type="radio" name="Lackfarbe" value="Blau">
+      Blau
+    </label><br>
+    <label>
+      <input type="radio" name="Lackfarbe" value="Grün">
+      Grün
+    </label><br>
+    <label>
+      <input type="radio" name="Lackfarbe" value="Schwarz">
+      Schwarz
+    </label><br>
+  </fieldset>
+  <br>
+
+  <fieldset>
+    <legend>Zimmertypen</legend>
+    <label>Wählen Sie die gewünschten Zimmertypen:</label><br>
+    <select name="Zimmertyp[]" multiple size="3">
+      <option>Einzelzimmer</option>
+      <option>Doppelzimmer</option>
+      <option>Suite</option>
+    </select>
+  </fieldset>
+  <br>
+
+  <fieldset>
+    <legend>Zusatzleistungen</legend>
+    <label>Wählen Sie die gewünschten Zusatzleistungen:</label><br>
+    <label>
+      <input type="checkbox" name="zusatzleistungen[]" value="Frühstück">
+      Frühstück
+    </label><br>
+    <label>
+      <input type="checkbox" name="zusatzleistungen[]" value="Flughafentransfer">
+      Flughafentransfer
+    </label><br>
+    <label>
+      <input type="checkbox" name="zusatzleistungen[]" value="Spa-Zugang">
+      Spa-Zugang
+    </label>
+  </fieldset>
+  <br>
+
+  <input type="submit" value="Auswählen">
+</form>
 
 </body>
 </html>
